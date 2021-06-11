@@ -29,11 +29,10 @@
             <form method="get" action="">
                 <fieldset>
                     <legend>Cтоимость</legend>
-                    <!--Тут я пока не поняла до конца как делать фильтр Стоимость-->
-                    <label>От</label>
-                    <input type="text" name="from">
-                    <label>До</label>
-                    <input type="text" name="before">
+                    <label for="from">От</label>
+                    <input type="text" name="from" id="from">
+                    <label for="before">До</label>
+                    <input type="text" name="before" id="before">
 
                 </fieldset>
                 
@@ -86,12 +85,13 @@
 
         <section>
             <h3>Сортировать</h3>
-            <button type="button">По цене</button>
-            <button type="button">По типу</button>
-            <button type="button">По названию</button>
-            <button type="button">По убыванию</button>
-            <button type="button">По возрастанию</button>
-
+            <ul>
+                <li><button type="button">По цене</button></li>
+                <li><button type="button">По типу</button></li>
+                <li><button type="button">По названию</button></li>
+                <li><button type="button">По убыванию</button></li>
+                <li><button type="button">По возрастанию</button></li>
+            </ul>
         </section>
 
         <section>
@@ -108,9 +108,8 @@
                         Информационный сайт <br>
                         для туристов
                     </p>
-                    <p>
                         <button type="button">9 900 руб</button>
-                    </p>
+                    
                 </li>
                 <li>
                     <a href="product.html">
@@ -123,9 +122,9 @@
                         Продуктовый лендинг <br>
                         приложения для iOS и Android
                     </p>
-                    <p>
+                    
                         <button type="button">9 900 руб</button>
-                    </p>
+                    
                 </li>
                 <li>
                     <a href="product.html">
@@ -138,9 +137,9 @@
                         Сайт салона красоты.<br>
                         Для мужчин, да.
                     </p>
-                    <p>
+                    
                         <button type="button">9 900 руб</button>
-                    </p>
+                    
                 </li>
                 <li>
                     <a href="product.html">
@@ -153,9 +152,9 @@
                         Интернет-магазин <br>
                         вязаных игрушек
                     </p>
-                    <p>
+                    
                         <button type="button">9 900 руб</button>
-                    </p>
+                    
                 </li>
                 <li>
                     <a href="product.html">
@@ -168,9 +167,9 @@
                         Лендинг курсов повышения <br>
                         квалификации
                     </p>
-                    <p>
+                    
                         <button type="button">9 900 руб</button>
-                    </p>
+                    
                 </li>
                 <li>
                     <a href="product.html">
@@ -183,14 +182,14 @@
                         Промо-сайт производителя<br>
                         крафтового кваса
                     </p>
-                    <p>
+                    
                         <button type="button">9 900 руб</button>
-                    </p>
+                    
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a>1</a>
+                    <a href="#">1</a>
                 </li>
                 <li>
                     <a href="#">2</a>
@@ -204,19 +203,19 @@
             </ul>
         </section>
 
-        <footer>
+        <section id="contacts">
+            <h6>NЁRDS DESIGN STUDIO</h6>
+            <p>наб. Реки Карповки,<br>
+              5 лит П, Санкт-Петербург<br>
+              <a href="tel:+78005558628"></a>+7 800 555-86-28</p>
+                <button type="button">Напишите нам</button>
+    
+            <img src="img/map 1.png" width="1440" height="416" alt="">
+            <img src="img/map-marker 1.png" width="231" height="190" alt="">
+    
+          </section>
 
-            <section id="contacts">
-              <h6>NЁRDS DESIGN STUDIO</h6>
-              <p>наб. Реки Карповки,<br>
-                5 лит П, Санкт-Петербург<br>
-                <a href="tel:+78005558628"></a>+7 800 555-86-28</p>
-                  <button type="button">Напишите нам</button>
-      
-              <img src="img/map 1.png" width="1440" height="416" alt="">
-              <img src="img/map-marker 1.png" width="231" height="190" alt="">
-      
-            </section>
+        <footer>
       
               <section>
                 <ul>
