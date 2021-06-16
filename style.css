@@ -1,0 +1,395 @@
+/* Fonts */
+
+@font-face {
+  font-family:"Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src:
+      url(fonts\roboto.woff2) format(woff2),
+      url(fonts\roboto.woff) format(woff);
+
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src:
+      url(fonts\robotobold.woff2) format(woff2),
+      url(fonts\robotobold.woff) format(woff);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src:
+      url(fonts\robotomedium.woff2) format(woff2),
+      url(fonts\robotomedium.woff) format(woff);
+}
+
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-grey3: #283136;
+  --basic-grey: #C1C1C1;
+  --basic-grey2: #EEEEEE;
+  --basic-red: #FB565A;
+  --basic-red-hover: #E74246;
+  --basic-red-active: #D7373B;
+  --basic-green: #00CA74;
+  --basic-green-hover: #00BC6C;
+  --basic-green-active: #00AA62;
+  --basic-yellow: #EFC849;
+  --basic-yellow-hover:#EAB534;
+  --basic-yellow-active: #E5A722;
+  --basic-white: #ffffff;
+
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-grey3);
+  text-transform: none;
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main-navigation */
+
+.main-header-logo:hover {
+  opacity: 0.7;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+
+.index-columns {
+  background-color: var(--basic-grey2);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.menu {
+  text-transform: uppercase;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.menu:hover {
+  color: var(--basic-red);
+}
+
+.menu:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.basket-link {
+  text-transform: uppercase;
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.basket-link:hover {
+  color: var(--basic-red);
+}
+
+.basket-link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+
+.main-welcome-box h2 {
+  font-size: 55px;
+  line-height: 55px;
+  color:var(--basic-black);
+}
+
+.main-welcome-box {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-grey3);
+}
+
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: left;
+}
+
+.services-item h4 {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.services-item p {
+  color: var(--basic-grey3);
+}
+
+/* About Left */
+
+.about-title {
+  font-size: 45px;
+  line-height: 45px;
+
+}
+
+.about-title-list {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-list {
+  list-style: none;
+}
+
+/* Red button */
+
+.button-red {
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+}
+
+.button-red:hover {
+  background-color: var(--basic-red-hover);
+}
+
+.button-red:active {
+  background-color: var(--basic-red-active);
+
+}
+
+.textButton:active {
+  opacity: 0.3;
+}
+
+/* Green button */
+
+.button-green {
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  border: none;
+}
+
+.button-green:hover {
+  background-color: var(--basic-green-hover);
+}
+
+.button-green:active {
+  background-color: var(--basic-green-active);
+}
+
+/* Yellow button */
+
+.button-yellow {
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-yellow);
+  border: none;
+}
+
+.button-yellow:hover {
+  background-color: var(--basic-yellow-hover);
+}
+
+.button-yellow:active {
+  background-color:var(--basic-yellow-active)
+}
+
+/*About Right*/
+
+.about-title {
+  color: var(--basic-black);
+}
+
+.about-title-list2 {
+  list-style: none;
+  color: var(--basic-black);
+}
+
+.number1 {
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.number2 {
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.number3 {
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.percent {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.about-title-list2 p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* Clients logo */
+
+.clients-list {
+  list-style: none;
+}
+
+/* Clients logo */
+
+.clients-logo {
+  opacity: 0.2;
+}
+
+.clients-logo:hover {
+  opacity: 1;
+}
+
+.clients-logo:active {
+  opacity: 0.1;
+}
+
+
+
+/* Contacs box */
+
+.contacts-box h6 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts-box p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+
+/* Footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-goodbuy h8 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.circleBase {
+  border-radius: 50%;
+}
+
+.iconSocial {
+margin: .2rem .2rem;
+background-color: #ddd;
+width: 81px;
+height: 81px;
+}
+
+.iconSocial:hover {
+background-color:var(--basic-red);
+}
+
+.iconSocial:active {
+background-color: var(--basic-red-active);
+}
+
+.social-button-vk {
+  margin: 33px 27px 33px 27px;
+}
+
+.social-button-vk:active {
+  opacity: 0.3;
+}
+
+.social-button-fb {
+  margin: 31px 34px 28px 35px;
+}
+
+.social-button-fb:active {
+  opacity: 0.3;
+}
+
+.social-button-insta {
+  margin: 30px;
+}
+
+.social-button-insta:active {
+  opacity: 0.3;
+}
+
+
