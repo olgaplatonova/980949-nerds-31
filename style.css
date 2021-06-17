@@ -36,6 +36,7 @@
   --basic-grey3: #283136;
   --basic-grey: #C1C1C1;
   --basic-grey2: #EEEEEE;
+  --basic-grey4: #E1E1E1;
   --basic-red: #FB565A;
   --basic-red-hover: #E74246;
   --basic-red-active: #D7373B;
@@ -102,17 +103,17 @@ img {
   list-style: none;
 }
 
-.menu {
+.site-navigation a {
   text-transform: uppercase;
   color: var(--basic-black);
   font-weight: 700;
 }
 
-.menu:hover {
+.site-navigation a:hover {
   color: var(--basic-red);
 }
 
-.menu:active {
+.site-navigation a:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
@@ -344,52 +345,49 @@ img {
   line-height: 36px;
   color: var(--basic-black);
 }
-
+/* Social icons */
 .footer-social {
   list-style: none;
+  display: flex;
 }
 
 .circleBase {
   border-radius: 50%;
 }
 
+.circleBase a {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+.circleBase a img {
+  margin: auto;
+  display: inherit;
+  height: inherit;
+}
+
+.circleBase a img:active {
+  opacity: 0.3;
+}
+
 .iconSocial {
-margin: .2rem .2rem;
-background-color: #ddd;
-width: 81px;
-height: 81px;
+  margin: .2rem .6rem;
+  background-color: var(--basic-grey4);
+  width: 81px;
+  height: 81px;
 }
 
 .iconSocial:hover {
-background-color:var(--basic-red);
+  background-color:var(--basic-red);
 }
 
 .iconSocial:active {
-background-color: var(--basic-red-active);
+  background-color: var(--basic-red-active);
 }
 
-.social-button-vk {
-  margin: 33px 27px 33px 27px;
-}
 
-.social-button-vk:active {
-  opacity: 0.3;
-}
+/* Catalog */
 
-.social-button-fb {
-  margin: 31px 34px 28px 35px;
-}
-
-.social-button-fb:active {
-  opacity: 0.3;
-}
-
-.social-button-insta {
-  margin: 30px;
-}
-
-.social-button-insta:active {
-  opacity: 0.3;
-}
 
 
