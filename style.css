@@ -28,7 +28,6 @@
       url(fonts\robotomedium.woff) format(woff);
 }
 
-
 /* Variables */
 
 :root {
@@ -66,6 +65,11 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
 }
 
 a {
@@ -88,6 +92,11 @@ img {
 }
 
 .main-navigation {
+  display: grid;
+
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
@@ -119,6 +128,9 @@ img {
 }
 
 .basket-link {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+
   text-transform: uppercase;
   color: var(--basic-black);
   font-weight: 700;
@@ -135,7 +147,6 @@ img {
   opacity: 0.3;
 }
 
-
 .main-welcome-box h2 {
   font-size: 55px;
   line-height: 55px;
@@ -151,6 +162,11 @@ img {
 /* Services */
 
 .services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -173,7 +189,6 @@ img {
 .about-title {
   font-size: 45px;
   line-height: 45px;
-
 }
 
 .about-title-list {
@@ -183,6 +198,16 @@ img {
 
 .about-list {
   list-style: none;
+}
+
+/* Index services columns */
+
+.about-columns {
+  display: grid;
+  grid-column: 1fr 1fr;
+  margin-bottom: 35px;
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
 /* Red button */
@@ -204,7 +229,6 @@ img {
 
 .button-red:active {
   background-color: var(--basic-red-active);
-
 }
 
 .textButton:active {
@@ -333,11 +357,19 @@ img {
 /* Footer */
 
 .main-footer {
+  padding: 60px 0;
+  margin-top: 65px;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: 0 0;
   background-repeat: repeat;
 }
+
+.main-footer .container {
+
+}
+
+
 
 .footer-goodbuy h8 {
   font-weight: 700;
@@ -388,6 +420,173 @@ img {
 
 
 /* Catalog */
+
+.main-page h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.backgroundColor {
+  color: var(--basic-grey2);
+}
+
+/* Filtres */
+
+/* Price */
+
+.FilterPrice legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fromBefore label {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* Grid */
+
+.FilterGrid li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/* Features */
+
+.FilterFeatures li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.buttonSubmit {
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-black);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-grey2);
+  border: none;
+}
+
+.buttonSubmit:hover {
+  background-color: #DFDFDF;
+}
+
+.buttonSubmit:active {
+  background-color: #D5D5D5;
+}
+
+/* Filter Sort */
+
+.filterSort h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filterSort li {
+  list-style: none;
+}
+
+/* Templates catalog */
+
+.templates li {
+  list-style: none;
+  background-color: var(--basic-grey2);
+
+}
+
+.templates h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.templates a {
+  color: var(--basic-black);
+  display: block;
+}
+
+.templates a:hover {
+  color: var(--basic-red);
+}
+
+.templates h3:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.templates p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.templates button {
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+}
+
+.templates button:hover {
+  background-color: var(--basic-red-hover);
+}
+
+.templates button:active {
+  background-color: var(--basic-red-active);
+
+}
+
+.textButton:active {
+  opacity: 0.3;
+}
+
+.pagination-list {
+  list-style: none;
+  display: block;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-grey2);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 0 4px;
+}
+
+.pagination-item a:hover {
+  background-color: #DFDFDF;
+}
+
+.pagination-item a:active {
+  background-color: #D5D5D5 ;
+}
+
 
 
 
