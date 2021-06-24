@@ -74,7 +74,9 @@ body {
 }
 
 .page-wrap {
+
   margin: auto;
+  padding: 0;
 }
 
 ul {
@@ -95,7 +97,6 @@ img {
 
 .main-header {
   display: grid;
-  justify-content: stretch;
   grid-template-columns: 160px 1fr min-content;
   margin-top: 50px;
 }
@@ -194,10 +195,6 @@ img {
   list-style: none;
   margin-top: 80px;
   margin-bottom: 160px;
-}
-
-.services-item {
-  text-align: left;
 }
 
 .services-item h4 {
@@ -488,7 +485,7 @@ img {
 
 .page-catalog {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 300px 1fr;
 }
 
 .main-page h1 {
@@ -506,6 +503,11 @@ img {
 
 /* Price */
 
+.inner-page {
+  display: grid;
+  //border: 2px solid #D7373B;
+}
+
 .FilterPrice legend {
   font-size: 18px;
   line-height: 30px;
@@ -521,7 +523,9 @@ img {
 }
 
 /* Filter Grid */
-
+.Filters-left {
+  //border: 2px solid #D7373B;
+}
 .FilterGrid li {
   list-style: none;
   font-size: 16px;
@@ -546,7 +550,7 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--basic-grey2);
-  border: none;
+  //border: none;
 }
 
 .buttonSubmit:hover {
@@ -559,6 +563,11 @@ img {
 
 /* Filter Sort */
 
+.filterSort {
+  display: grid;
+  grid-column: 2 / -1;
+  //border: 2px solid #D7373B;
+}
 .filterSort h3 {
   font-size: 18px;
   line-height: 30px;
@@ -572,10 +581,18 @@ img {
 
 /* Templates catalog */
 
+.templates-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  grid-column: 2 / -1;
+  //border: 2px solid #00AA62;
+  list-style: none;
+}
+
 .templates li {
   list-style: none;
   background-color: var(--basic-grey2);
-
 }
 
 .templates h3 {
@@ -628,6 +645,10 @@ img {
 
 .textButton:active {
   opacity: 0.3;
+}
+
+.pagination-inner {
+  padding-top: 54px;
 }
 
 .pagination-list {
