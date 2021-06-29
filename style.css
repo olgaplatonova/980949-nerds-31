@@ -102,6 +102,10 @@ img {
 }
 
 .main-header-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   //border: 2px solid #000000;
   width: 160px;
@@ -118,6 +122,7 @@ img {
 
 .main-navigation {
   width: 437px;
+  height: 30px;
   margin: 0 auto;
   padding: 0 10px;
   font-size: 16px;
@@ -134,10 +139,17 @@ img {
 }
 
 .site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
 }
 
 .site-navigation a {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
   font-weight: 700;
@@ -172,6 +184,17 @@ img {
   opacity: 0.3;
 }
 
+.basket-navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  //border: 1px solid #000000;
+  width: 115px;
+  height: 30px;
+}
+
 .main-welcome-box h2 {
   font-size: 55px;
   line-height: 55px;
@@ -198,8 +221,11 @@ img {
 }
 
 .services-item h4 {
+  margin-top: 15px;
+  margin-bottom: 1px;
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
   color: var(--basic-black);
 }
 
@@ -220,6 +246,8 @@ img {
 /* Red button */
 
 .button-red {
+  padding: 15px 40px ;
+  border-radius: 3px;
   font: inherit;
   font-weight: 500;
   text-align: center;
@@ -245,6 +273,8 @@ img {
 /* Green button */
 
 .button-green {
+  padding: 15px 40px ;
+  border-radius: 3px;
   font: inherit;
   font-weight: 500;
   text-align: center;
@@ -266,6 +296,8 @@ img {
 /* Yellow button */
 
 .button-yellow {
+  padding: 15px 40px ;
+  border-radius: 3px;
   font: inherit;
   font-weight: 500;
   text-align: center;
@@ -286,25 +318,49 @@ img {
 
 /*About columns */
 .about-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+}
+.about-columns p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-item {
+  font-size: 16px;
+  line-height: 44px;
 }
 
 /* About Left */
 
 .about-left {
-
+  width: 655px;
 }
 
 .about-title {
   font-size: 45px;
   line-height: 45px;
+  margin-top: 35px;
 }
+
 
 .about-title-list {
   font-size: 16px;
   line-height: 24px;
-  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.about-title-list-right {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 .about-list {
@@ -314,7 +370,10 @@ img {
 /*About Right*/
 
 .about-right {
-
+  display: flex;
+  flex-direction: column;
+  margin-left: 149px;
+  width: 360px;
 }
 
 .about-title {
@@ -322,11 +381,13 @@ img {
 }
 
 .about-title-list2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
   color: var(--basic-black);
+  //border: 1px solid #000000;
+
 }
 
 .number1 {
@@ -334,7 +395,7 @@ img {
   line-height: 64px;
   color: var(--basic-black);
   margin: auto;
-  margin-top: 30px;
+
 
 }
 
@@ -343,7 +404,6 @@ img {
   line-height: 64px;
   color: var(--basic-black);
   margin: 0;
-  margin-top: 30px;
 }
 
 .number3 {
@@ -351,7 +411,6 @@ img {
   line-height: 64px;
   color: var(--basic-black);
   margin: 0;
-  margin-top: 30px;
 }
 
 .percent {
@@ -366,6 +425,14 @@ img {
   line-height: 18px;
 }
 
+.indicators {
+}
+
+.about-columns .about-title-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 
 /* Clients logo */
@@ -591,6 +658,9 @@ img {
 }
 
 .templates li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   list-style: none;
   background-color: var(--basic-grey2);
 }
