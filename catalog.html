@@ -13,7 +13,7 @@
   <header class="main-header">
 
     <div class="main-header-logo">
-      <a>
+      <a href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logotype">
       </a>
     </div>
@@ -21,7 +21,7 @@
     <div class="main-navigation-wrapper">
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="#about">Студия</a></li>
+          <li><a href="index.html">Студия</a></li>
           <li><a href="#clients">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#contacts">Контакты</a></li>
@@ -34,19 +34,23 @@
     </div>
   </header>
 
-  <main class="main-page">
+  <main class="inner-page">
 
     <h1>Магазин готовых шаблонов</h1>
+
     <div class="page-catalog">
-      <section class="FilterPrice">
+      <aside class="FilterPrice">
+
         <div class="Filters-left">
-        <h2>Фильтр товаров</h2>
         <form method="get" action="">
+
           <fieldset>
             <legend>Cтоимость</legend>
+
             <div class="fromBefore">
               <label for="from">От</label>
               <input type="text" name="from" id="from">
+              <br />
               <label for="before">До</label>
               <input type="text" name="before" id="before">
             </div>
@@ -98,32 +102,32 @@
           <button class="buttonSubmit" type="submit">Показать</button>
         </form>
         </div>
-      </section>
+      </aside>
 
+      <div class="content-right">
       <section class="filterSort">
         <h3>Сортировать</h3>
         <ul>
           <li>
-            <button type="button">По цене</button>
+            <a href="#">По цене</a>
           </li>
           <li>
-            <button type="button">По типу</button>
+            <a href="#"> По типу </a>
           </li>
           <li>
-            <button type="button">По названию</button>
+            <a href="#">По названию</a>
+          </li>
+
+          <li>
+            <a href="#"><img src="img/icon-down-dir.png" width="11" height="10" alt="icon down"></a>
           </li>
           <li>
-            <button type="button">По убыванию</button>
-          </li>
-          <li>
-            <button type="button">По возрастанию</button>
+            <a href="#"><img src="img/icon-up-dir.png" width="11" height="10" alt="icon up"></a>
           </li>
         </ul>
       </section>
 
       <div class="templates-columns">
-        <section class="templates">
-          <!-- <h2>Список шаблонов сайтов</h2> -->
           <ul>
             <li>
               <a href="#">
@@ -192,6 +196,7 @@
               </button>
 
             </li>
+
             <li>
               <a href="product.html">
                 <h3>A Plus</h3>
@@ -228,7 +233,10 @@
             </li>
           </ul>
 
-          <div class="pagination-inner">
+          </div>
+
+          <br />
+          <section>
           <ul class="pagination-list">
             <li class="pagination-item">
               <a href="">1</a>
@@ -243,19 +251,17 @@
               <a href="#">Следующая</a>
             </li>
           </ul>
-          </div>
         </section>
-      </div>
+        </div>
+
     </div>
     <section class="contacts-box" id="contacts">
       <h6>NЁRDS DESIGN STUDIO</h6>
       <p>наб. Реки Карповки,<br>
         5 лит П, Санкт-Петербург<br>
-        <a href="tel:+78005558628"></a>+7 800 555-86-28</p>
+        <a class="contacts-phone" href="tel:+78005558628"></a>+7 800 555-86-28
+      </p>
       <button class="button-red" type="button">Напишите нам</button>
-
-      <img src="img/map 1.png" width="1440" height="416" alt="">
-      <img src="img/map-marker 1.png" width="231" height="190" alt="">
 
     </section>
   </main>
@@ -294,6 +300,12 @@
     </section>
 
   </footer>
+
+
+
+
+    </form>
+  </section>
 </div>
 </body>
 </html>
