@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Нёрдс</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
 </head>
 
 <body class="page-body inner-page">
@@ -38,13 +39,12 @@
   </div>
 </div>
 
-<main>
   <div class="page-catalog">
     <aside class="FilterPrice">
 
       <div class="Filters-left">
 
-        <form method="get" action="">
+        <form class="form-left"  method="get" action="">
           <fieldset class="filter-item">
             <legend>Cтоимость:</legend>
 
@@ -295,11 +295,39 @@
         5 лит П, Санкт-Петербург<br>
         <a class="contacts-phone" href="tel:+78005558628"></a>+7 800 555-86-28
       </p>
-      <button class="button-red" type="button">Напишите нам</button>
+      <a href="login.html" class="login-link"><button class="button-red " type="button">Напишите нам</button></a>
     </section>
+
+    <div id="modal-login" class="modal-hidden">
+      <form action="get" method="post" class="form-contact">
+        <div class="FormFirstRow">
+          <h1>Напишите нам</h1>
+          <div class="close">
+            <a href="#" id="modal-close"> <img src="img/close-cross.png"></a>
+          </div>
+        </div>
+        <ul>
+          <div class="secondRow">
+            <li>
+              <label for="name">Ваше имя:</label> <br>
+              <input type="text" id="name" name="user_name" placeholder="Имя Фамилия">
+            </li>
+            <li>
+              <label for="mail">Ваш e-mail:</label> <br>
+              <input type="email" id="mail" name="user_mail" placeholder="email@example.com ">
+            </li>
+          </div>
+          <li>
+            <label for="msg">Текст письма:</label> <br>
+            <textarea id="msg" name="user_message" placeholder="В свободной форме"></textarea>
+          </li>
+        </ul>
+        <button class="button-form">Отправить</button>
+      </form>
+    </div>
   </div>
 
-</main>
+
 
 <footer class="footer page-wrap">
   <section class="main-footer">
@@ -333,8 +361,6 @@
 
   </section>
 </footer>
-
-</section>
-</div>
+<script src="./js/contacts.js" type="text/javascript"></script>
 </body>
 </html>
