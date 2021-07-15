@@ -329,6 +329,7 @@ a {
   padding: 15px 40px;
   border-radius: 3px;
   font-weight: 500;
+  font-size: .9em;
   text-align: center;
   color: var(--basic-white);
   text-transform: uppercase;
@@ -1115,8 +1116,10 @@ a {
 
 }
 
-.secondRow {
-  display: flex;
+.secondRow  {
+  display: grid;
+  grid-template-columns: 330px 330px;
+  width: 300px;
 }
 
 .form-contact ul {
@@ -1132,6 +1135,7 @@ a {
 
 .form-contact label {
   display: inline-block;
+  vertical-align: top;
   width: 150px;
   text-align: left;
   font-size: 14px;

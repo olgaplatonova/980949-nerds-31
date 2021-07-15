@@ -44,7 +44,7 @@
 
       <div class="Filters-left">
 
-        <form class="form-left"  method="get" action="">
+        <form class="form-left"  method="get" action="#">
           <fieldset class="filter-item">
             <legend>Cтоимость:</legend>
 
@@ -283,7 +283,7 @@
         5 лит П, Санкт-Петербург<br>
         <a class="contacts-phone" href="tel:+78005558628"></a>+7 800 555-86-28
       </p>
-      <a href="login.html" class="login-link"><button class="button-red" type="button">Напишите нам</button></a>
+      <a href="login.html" class="login-link"><span class="button-red" type="button">Напишите нам</span></a>
     </section>
 
     <div id="modal-login" class="modal-hidden">
@@ -294,18 +294,17 @@
             <a href="#" id="modal-close"> <img src="img/close-cross.png" alt="Закрыть"></a>
           </div>
         </div>
-        <ul>
-          <div class="secondRow">
+        <ul class="secondRow">
             <li>
-              <label for="name">Ваше имя:</label> <br>
+              <label for="name" class="form-name">Ваше имя:</label> <br>
               <input type="text" id="name" name="user_name" placeholder="Имя Фамилия">
             </li>
             <li>
-              <label for="mail">Ваш e-mail:</label> <br>
-              <input type="email" id="mail" name="user_mail" placeholder="email@example.com ">
+              <label for="mail" class="form-email">Ваш e-mail:</label> <br>
+              <input class="form-email" type="email" id="mail" name="user_mail" placeholder="email@example.com ">
             </li>
-          </div>
           <li>
+            <br>
             <label for="msg">Текст письма:</label> <br>
             <textarea id="msg" name="user_message" placeholder="В свободной форме"></textarea>
           </li>
