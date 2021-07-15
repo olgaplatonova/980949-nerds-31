@@ -176,35 +176,33 @@
     <a href="login.html" class="login-link"><span class="button-red " type="button">Напишите нам</span></a>
   </section>
   <div id="modal-login" class="modal-hidden">
-    <form action="get" method="post" class="form-contact">
-      <div class="FormFirstRow">
-        <h1>Напишите нам</h1>
-        <div class="close">
-          <a href="#" id="modal-close"> <img src="img/close-cross.png" width="21" height="21" alt="Закрыть"></a>
+      <form action="get" method="post" class="form-contact">
+        <div class="FormFirstRow">
+          <h1>Напишите нам</h1>
+          <div class="close">
+            <a href="#" id="modal-close"> <img src="img/close-cross.png" alt="Закрыть"></a>
+          </div>
         </div>
-      </div>
-      <ul>
-        <div class="secondRow">
+        <ul class="secondRow">
           <li>
-            <label for="name">Ваше имя:</label> <br>
+            <label for="name" class="form-name">Ваше имя:</label> <br>
             <input type="text" id="name" name="user_name" placeholder="Имя Фамилия">
           </li>
           <li>
-            <label for="mail">Ваш e-mail:</label> <br>
-            <input type="email" id="mail" name="user_mail" placeholder="email@example.com ">
+            <label for="mail" class="form-email">Ваш e-mail:</label> <br>
+            <input class="form-email" type="email" id="mail" name="user_mail" placeholder="email@example.com ">
           </li>
-        </div>
-        <li>
-          <label for="msg">Текст письма:</label> <br>
-          <textarea id="msg" name="user_message" placeholder="В свободной форме"></textarea>
-        </li>
-      </ul>
-      <button class="button-form">Отправить</button>
-    </form>
+          <li>
+            <br>
+            <label for="msg">Текст письма:</label> <br>
+            <textarea id="msg" name="user_message" placeholder="В свободной форме"></textarea>
+          </li>
+        </ul>
+        <button class="button-form">Отправить</button>
+      </form>
+    </div>
   </div>
-</div>
-
-<footer class="footer page-wrap">
+  <footer class="footer page-wrap">
   <section class="main-footer">
     <ul class="footer-social">
       <li>
